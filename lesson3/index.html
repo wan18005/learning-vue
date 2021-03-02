@@ -3,18 +3,44 @@
 
 <head>
   <meta charset="utf-8" />
-  <title>Learning Vue</title>
-  <link rel="stylesheet" href="/styles.css">
+  <title>Learning Vue3</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
   <div id="root">
+    <!-- To bind an attribute, use the v-bind directive: -->
     <button :title="title">Hover over me</button>
+ <!--
+    Binding an attribute
+    To bind an attribute, use the v-bind directive:
+
+    <div id="root">
+    <button v-bind:title="title">Hover over me</button>
+    </div>
+-->
+<!--
+  Binding a class name
+  You can also bind a class of an HTML element to a Vue property. Add this to your HTML:
+
     <h1 :class="className">Hello World</h1>
+-->
+
+    <h1 :class="className">Hello World</h1>
+
+    <!--
+    Binding using object syntax
+    You can also bind a class using JavaScript object syntax if you would like to dynamically toggle the class value.
+    <button :class="{ 'blue': isLoading}">Click Me</button>
+    -->
     <button :class="{ 'blue': isLoading}" @click="toggleLoading">Click Me</button>
+     <!--Adding an event listener
+      Let's add an event listener to toggle this class. Modify your button so it looks like this:
+      <button :class="{ 'blue': isLoading}" @click="toggleLoading">Click Me</button>
+      -->
   </div>
   <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
-  <script text="type/javascript" src="/script.js"></script>
+  <script text="type/javascript" src="script.js"></script>
 </body>
 
 </html>

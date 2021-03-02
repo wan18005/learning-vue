@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="utf-8" />
-  <title>Learning Vue</title>
+  <title>Learning Vue2</title>
 </head>
 
 <body>
@@ -11,6 +11,9 @@
     <ul>
       <!-- Loop through each name in names and render it. This will create a set of li elements. The v-text
       directive will set the list element value to the name -->
+
+      <!--  In index.html, use the v-for directive to loop through the elements:  -->
+      <!--  You can also use the v-text directive instead of the mustache syntax:  -->
       <li v-for="name in names" v-text="name"></li>
     </ul>
     <!-- Let the user enter a new name and bind it to the newName property -->
@@ -19,7 +22,7 @@
     <button @click="addName">Add Name</button>
   </div>
   <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
-  <script text="type/javascript" src="/script.js"></script>
+  <script text="type/javascript" src="script.js"></script>
 </body>
 
 </html>
